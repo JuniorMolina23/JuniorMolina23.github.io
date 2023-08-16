@@ -4,52 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2em;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-        }
-        .project {
-            margin-bottom: 1em;
-            padding: 1em;
-            border: 1px solid #ccc;
-            background-color: #f9f9f9;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Portafolio</h1>
-        <p>Bienvenido a mi página de portafolio</p>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">¡Hola, soy [Tu Nombre]!</h1>
+            <p class="hero-description">Bienvenido a mi página de portafolio.</p>
+        </div>
     </header>
-    <div class="container">
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Descripción breve del proyecto 1.</p>
-            <a href="#">Ver proyecto</a>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Mis Proyectos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="project">
+                        <h3>Proyecto 1</h3>
+                        <p>Descripción del proyecto 1.</p>
+                        <a href="#">Ver proyecto</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project">
+                        <h3>Proyecto 2</h3>
+                        <p>Descripción del proyecto 2.</p>
+                        <a href="#">Ver proyecto</a>
+                    </div>
+                </div>
+                <!-- Puedes agregar más proyectos aquí -->
+            </div>
         </div>
-        <div class="project">
-            <h3>Proyecto 2</h3>
-            <p>Descripción breve del proyecto 2.</p>
-            <a href="#">Ver proyecto</a>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Acerca de Mí</h2>
+            <p>¡Hola! Soy [Tu Nombre], un apasionado por [Tus Intereses]. Me dedico a [Tu Área de Especialización] y he trabajado en diversos proyectos emocionantes.</p>
         </div>
-        <!-- Puedes agregar más proyectos aquí -->
-    </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <p>Si estás interesado en colaborar o tienes alguna pregunta, ¡no dudes en contactarme!</p>
+            <a href="mailto:tu@email.com" class="contact-email">Email: tu@email.com</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 [Tu Nombre]. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
